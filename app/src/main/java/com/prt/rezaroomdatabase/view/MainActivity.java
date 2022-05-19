@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    //<editor-fold desc="ViewModel Method">
     private void insertRandomUserViewModel() {
         Disposable disposable = userViewModel.insertUser(UserFactory.makeUser())
                 .subscribeOn(Schedulers.io()).subscribe();
@@ -84,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
         compositeDisposable.add(disposable);
     }
+    //</editor-fold>
 
     //<editor-fold desc="Old Method">
     private void showUsers() {

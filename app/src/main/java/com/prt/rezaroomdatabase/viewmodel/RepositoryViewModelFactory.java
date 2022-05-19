@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
 public class RepositoryViewModelFactory implements ViewModelProvider.Factory {
-    private Context context;
+    private final Context context;
 
     public RepositoryViewModelFactory(Context context) {
         this.context = context;
