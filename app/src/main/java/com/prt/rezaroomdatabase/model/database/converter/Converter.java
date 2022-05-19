@@ -1,4 +1,4 @@
-package com.prt.rezaroomdatabase.database.converter;
+package com.prt.rezaroomdatabase.model.database.converter;
 
 import java.util.Date;
 

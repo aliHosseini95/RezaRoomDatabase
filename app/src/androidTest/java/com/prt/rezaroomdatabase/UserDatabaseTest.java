@@ -2,8 +2,8 @@ package com.prt.rezaroomdatabase;
 
 import android.util.Log;
 
-import com.prt.rezaroomdatabase.database.Database;
-import com.prt.rezaroomdatabase.database.entity.User;
+import com.prt.rezaroomdatabase.model.database.Database;
+import com.prt.rezaroomdatabase.model.database.entity.User;
 
 import org.junit.After;
 import org.junit.Before;

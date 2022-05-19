@@ -1,4 +1,4 @@
-package com.prt.rezaroomdatabase.database.entity;
+package com.prt.rezaroomdatabase.model.database.entity;
 
 import java.util.Date;
 

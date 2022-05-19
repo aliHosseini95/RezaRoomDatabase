@@ -1,6 +1,6 @@
 package com.prt.rezaroomdatabase.fac;
 
-import com.prt.rezaroomdatabase.database.entity.Pet;
+import com.prt.rezaroomdatabase.model.database.entity.Pet;
 
 import java.util.Date;
 

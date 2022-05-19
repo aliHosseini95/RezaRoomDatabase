@@ -1,4 +1,4 @@
-package com.prt.rezaroomdatabase;
+package com.prt.rezaroomdatabase.view;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.prt.rezaroomdatabase.R;
 
 import java.io.IOException;
 

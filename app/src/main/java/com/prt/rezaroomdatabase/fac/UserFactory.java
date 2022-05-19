@@ -1,6 +1,6 @@
 package com.prt.rezaroomdatabase.fac;
 
-import com.prt.rezaroomdatabase.database.entity.User;
+import com.prt.rezaroomdatabase.model.database.entity.User;
 
 import java.util.ArrayList;
 import java.util.List;

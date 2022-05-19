@@ -1,6 +1,6 @@
-package com.prt.rezaroomdatabase.database.dao;
+package com.prt.rezaroomdatabase.model.database.dao;
 
-import com.prt.rezaroomdatabase.database.entity.UserPet;
+import com.prt.rezaroomdatabase.model.database.entity.UserPet;
 
 import java.util.List;
 

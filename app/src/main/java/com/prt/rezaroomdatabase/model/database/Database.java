@@ -1,14 +1,14 @@
-package com.prt.rezaroomdatabase.database;
+package com.prt.rezaroomdatabase.model.database;
 
 import android.content.Context;
 
-import com.prt.rezaroomdatabase.database.converter.Converter;
-import com.prt.rezaroomdatabase.database.dao.PetDao;
-import com.prt.rezaroomdatabase.database.dao.UserDao;
-import com.prt.rezaroomdatabase.database.dao.UserPetDao;
-import com.prt.rezaroomdatabase.database.entity.Pet;
-import com.prt.rezaroomdatabase.database.entity.User;
-import com.prt.rezaroomdatabase.database.entity.UserPet;
+import com.prt.rezaroomdatabase.model.database.converter.Converter;
+import com.prt.rezaroomdatabase.model.database.dao.PetDao;
+import com.prt.rezaroomdatabase.model.database.dao.UserDao;
+import com.prt.rezaroomdatabase.model.database.dao.UserPetDao;
+import com.prt.rezaroomdatabase.model.database.entity.Pet;
+import com.prt.rezaroomdatabase.model.database.entity.User;
+import com.prt.rezaroomdatabase.model.database.entity.UserPet;
 
 import androidx.room.Room;
 import androidx.room.RoomDatabase;

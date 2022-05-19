@@ -1,4 +1,4 @@
-package com.prt.rezaroomdatabase.database.entity;
+package com.prt.rezaroomdatabase.model.database.entity;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
