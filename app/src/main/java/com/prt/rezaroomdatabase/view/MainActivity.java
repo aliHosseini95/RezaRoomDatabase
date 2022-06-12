@@ -1,7 +1,12 @@
 package com.prt.rezaroomdatabase.view;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleEventObserver;
+import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.ViewModelProvider;
+import dagger.hilt.android.AndroidEntryPoint;
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 import io.reactivex.rxjava3.core.Completable;
 import io.reactivex.rxjava3.disposables.CompositeDisposable;
@@ -19,11 +24,11 @@ import com.prt.rezaroomdatabase.model.database.entity.Pet;
 import com.prt.rezaroomdatabase.model.database.entity.User;
 import com.prt.rezaroomdatabase.fac.PetFactory;
 import com.prt.rezaroomdatabase.fac.UserFactory;
-import com.prt.rezaroomdatabase.viewmodel.RepositoryViewModelFactory;
 import com.prt.rezaroomdatabase.viewmodel.UserViewModel;
 
 import java.util.List;
 
+@AndroidEntryPoint
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Database database;
@@ -38,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        userViewModel = new ViewModelProvider(this, new RepositoryViewModelFactory(getBaseContext())).get(UserViewModel.class);
+        userViewModel = new ViewModelProvider(this).get(UserViewModel.class);
 
         database = Database.getInstance(getBaseContext());
         compositeDisposable = new CompositeDisposable();
