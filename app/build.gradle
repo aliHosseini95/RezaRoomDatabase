@@ -36,6 +36,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation "org.assertj:assertj-core:3.23.1"
     //    Room --- Testing
     androidTestImplementation "androidx.room:room-testing:$roomVersion"
 //    Room

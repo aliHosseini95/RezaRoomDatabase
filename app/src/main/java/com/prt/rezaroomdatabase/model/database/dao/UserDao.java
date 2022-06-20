@@ -10,6 +10,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
+import io.reactivex.rxjava3.core.Completable;
 import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Single;
 
@@ -26,11 +27,11 @@ public interface UserDao {
     Single<List<User>> getUsersByName(String name);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insertUser(User user);
+    Completable insertUser(User user);
 
     @Update
-    void updateUser(User user);
+    Completable updateUser(User user);
 
     @Delete
-    void removeUser(User user);
+    Completable removeUser(User user);
 }
