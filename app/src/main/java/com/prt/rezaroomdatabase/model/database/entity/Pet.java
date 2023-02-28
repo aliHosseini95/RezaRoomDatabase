@@ -21,8 +21,7 @@ public class Pet {
     public Pet() {
     }
 
-    public Pet(long id, String name, String type, Date date) {
-        setPetId(id);
+    public Pet(String name, String type, Date date) {
         setPetName(name);
         setType(type);
         setLastVaccinatedDate(date);

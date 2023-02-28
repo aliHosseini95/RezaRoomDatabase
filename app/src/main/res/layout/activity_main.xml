@@ -39,6 +39,24 @@
             android:layout_margin="8.dp"
             android:text="Insert Random Pet" />
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pet_name_input_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Insert pet name ..."/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pet_type_input_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Insert pet type ..."/>
+
+        <Button
+            android:id="@+id/insert_custom_pet_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8.dp"
+            android:text="Insert Custom Pet" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"

@@ -10,6 +10,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
+import io.reactivex.rxjava3.core.Completable;
 import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Single;
 
@@ -29,11 +30,11 @@ public interface PetDao {
     Single<List<Pet>> getPetByType(String type);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insertPet(Pet pet);
+    Completable insertPet(Pet pet);
 
     @Update
-    void updatePet(Pet pet);
+    Completable updatePet(Pet pet);
 
     @Delete
-    void removePet(Pet pet);
+    Completable removePet(Pet pet);
 }
